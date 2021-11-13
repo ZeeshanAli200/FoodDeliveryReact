@@ -169,7 +169,7 @@ function Restaurant() {
                                 placeholder="City"
 
                                 onChange={(e) => { setcityName(e.target.value) }}
-                                onClick={(eve) => { setcityName(eve.target.value) }}
+                              //  onClick={(eve) => { setcityName(eve.target.value) }}
 
 
                                 id="cityselect"
