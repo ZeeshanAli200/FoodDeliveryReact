@@ -107,7 +107,7 @@ await updateDoc(dataRef, {
         <>{console.log(state.RestaurantOrders)}
 
             {
-                state.RestaurantOrders.length > 0 ? (
+                state.RestaurantOrders.length > 0 && state.RestaurantOrders.every(status => status.Orders.length<1)==false ?(
                     <>
                         {/* <Grid container spacing={2}>
                             <Grid mt={1} md item xs={4} xl={4} md={4}>
